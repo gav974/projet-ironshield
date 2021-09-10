@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.font1 {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  z-index: 1000;
+}
+
+section {
+  z-index: 1000;
+}
+
+#part-timer h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+#part-timer #countdown ul {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#part-timer #countdown li {
+  border-radius: 5px;
+  border-inline: 1px solid grey;
+  color: black;
+  width: 5em;
+  background-color: white;
+  opacity: 0.8;
+  border-bottom: black 1px solid;
+  -webkit-box-shadow: grey 1px;
+          box-shadow: grey 1px;
+  text-align: center;
+  margin-right: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#part-timer #countdown span {
+  text-shadow: 1px 0 1px white;
+  border-bottom: 1px solid black;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 4em !important;
+  text-shadow: 1px 0 1px white;
+  font-weight: 500;
+}
+
+video {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+  background-size: cover;
+  z-index: -1000;
+}
+/*# sourceMappingURL=styles.css.map */

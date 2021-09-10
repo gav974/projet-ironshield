@@ -1,0 +1,45 @@
+
+
+#part-timer {
+
+    h1{
+        font-family:  $font1;
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    #countdown{
+        ul{
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        li{
+            border-radius: 5px;
+            border-inline: 1px solid grey;
+            color:black;
+            width:5em;
+            background-color: white;
+            opacity: 0.8;
+            border-bottom: black 1px solid;
+            box-shadow: grey 1px;
+            text-align: center;
+            margin-right: 1rem;
+            display: inline-block;
+            text-decoration: none; 
+            font-size: 1rem;
+        
+        }
+        span{
+            text-shadow:1px 0 1px white;
+            border-bottom: 1px solid black;
+            font-family: $font1;
+            display:block;
+            font-size: 4em!important ;
+            text-shadow:1px 0 1px white;
+            font-weight: 500;
+            
+
+        }
+    }
+}

@@ -1,0 +1,33 @@
+//css import
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//variables
+$font1: 'Raleway', sans-serif;
+
+
+
+//global setting
+
+.font1 {
+font-family: $font1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    z-index: 1000;
+   
+}
+section{
+  
+    z-index: 1000;
+
+}
+
+
+
+@import './timer';
+@import './video';
+@import './iconeform'
+
