@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="securité privee reunion ">
     <!--favicon-->
     <link rel="shortcut icon" href="médias/favicon-ironshield-image.png" type="image/x-icon">
     <!--bootstrap-->
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--setting css-->
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>Groupe Sinapin |la sécurité privée notre priorité</title>
  
 
@@ -35,12 +37,12 @@
                             <h2 class=" font1 display-3 mt-0 mt-xl-4  text-center text-uppercase">Nous travaillons à la conception du site </h2>
                              <p class=" font1 fs-3 text-center ">Rendez-vous à l'ouverture </p>
                              <p class=" font1 fs-3 text-center">le 08 octobre </p>  
-                             <div id=part-timer class="container">
+                             <div id=part-timer class="container-fluid">
                                 <div class="row">
-                                    <div class="col-6 col-sm-12 col-md-12 col-xl-12 " >
+                                    <div class="col-11 col-sm-12 col-md-12 col-xl-12" >
                                         <h1 id="headline"></h1>
                                         <div class="text-center" id="countdown">
-                                            <ul >
+                                            <ul class="d-block fs-5" >
                                                 <li><span id="days"></span>Jours</li>
                                                 <li><span id="hours"></span>Heures</li>
                                                 <li><span id="minutes"></span>Minutes</li>
@@ -59,7 +61,7 @@
         </section>
 <!--section two-->
         <section class="section-2">
-            <div class="container ">
+            <div class="container font1 ">
                 <div class="row d-flex justify-content-center align-content-around">
                     <div class="col col-sm-12 col-md-3 col-xl-3">
                         <a class="text-center" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasLeft"><i class="fas fa-phone-square-alt"></i></a>
@@ -76,11 +78,11 @@
 
          <!--Scrollspy-->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-1" aria-labelledby="offcanvasLeftLabel">
-            <div class="offcanvas-header">
-                    <h5 id="offcanvasLeftLabel">Appeler Nous</h5>
+            <div class="offcanvas-header font1">
+                    <h5 id="offcanvasLeftLabel">Nos coordonnées</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
             </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body font1">
                         <div class="container mb-1">
                             <i class="fas fa-home d-block text-center display-3 mb-3"></i> 
                             <p>289 Chem. Riviere du Mat les Hauts, Saint-André 97440, La Réunion</p>
@@ -105,7 +107,7 @@
                     </div>
                     <!--end of scrollspy-->
         </div>
-         <!--Scrollspy-->
+         <!--Scrollspy 2-->
          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-2" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                     <h5 id="offcanvasLeftLabel">Envoyez votre message</h5>
@@ -113,7 +115,7 @@
             </div>
                     <div class="offcanvas-body">
                         
-                        <div class="container">
+                        <div class="container font1">
  
                             <div class="row">
                      
@@ -145,7 +147,7 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_email">Email *</label>
-                                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Votre email *" required="required" data-error="Un email valid est obligatoire.">
+                                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Votre email *" required="required" data-error="Un email valide est obligatoire.">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -153,7 +155,7 @@
                                                     <div class="form-group">
                                                         <label for="form_need">Comment pouvons nous vous aidez ?</label>
                                                         <select id="form_need" name="need" class="form-control" required="required" data-error=" ?">
-                                                            <option value="⬇"></option>
+                                                            <option value="qfdqsqsd" disabled></option>
                                                             <option value="Demande générale">Demande générale</option>
                                                             <option value="Demande de devis">Demande de devis</option>
                                                             <option value="Demander une facture">Demander une facture</option>
@@ -172,7 +174,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 mt-2">
-                                                    <input type="submit" class="btn btn-success btn-send" value="Envoyer">
+                                                    <input type="submit" class="btn  btn-send" value="Envoyer">
                                                 </div>
                                             </div>
                                             <div class="row">

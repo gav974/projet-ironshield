@@ -15,16 +15,18 @@
         }
 
         li{
+            font-family:$font1;
             border-radius: 5px;
             border-inline: 1px solid grey;
             color:black;
             width:5em;
+            height: auto;
             background-color: white;
             opacity: 0.8;
             border-bottom: black 1px solid;
             box-shadow: grey 1px;
             text-align: center;
-            margin-right: 1rem;
+            margin-right: 1em;
             display: inline-block;
             text-decoration: none; 
             font-size: 1rem;
@@ -35,11 +37,26 @@
             border-bottom: 1px solid black;
             font-family: $font1;
             display:block;
-            font-size: 4em!important ;
+            font-size: 3em ;
             text-shadow:1px 0 1px white;
             font-weight: 500;
             
 
         }
     }
+    @media screen and (min-width: 480px) {
+        
+        li{
+            width:2em;
+            margin-right:0em;
+            font-size: 8px;
+        }
+        
+        span{
+            font-size: 8px;
+            
+    
+        }
+      }
 }
+
