@@ -55,12 +55,12 @@ section .section-1 {
 }
 
 @media screen and (min-width: 480px) {
-  #part-timer li {
+  #part-timer ul li {
     width: 2em;
-    margin-right: 0em;
+    margin: 0;
     font-size: 8px;
   }
-  #part-timer span {
+  #part-timer ul span {
     font-size: 8px;
   }
 }

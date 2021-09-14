@@ -42,7 +42,7 @@
                                     <div class="col-11 col-sm-12 col-md-12 col-xl-12" >
                                         <h1 id="headline"></h1>
                                         <div class="text-center" id="countdown">
-                                            <ul class="d-block fs-5" >
+                                            <ul >
                                                 <li><span id="days"></span>Jours</li>
                                                 <li><span id="hours"></span>Heures</li>
                                                 <li><span id="minutes"></span>Minutes</li>
@@ -62,13 +62,15 @@
 <!--section two-->
         <section class="section-2">
             <div class="container font1 ">
-                <div class="row d-flex justify-content-center align-content-around">
-                    <div class="col col-sm-12 col-md-3 col-xl-3">
-                        <a class="text-center" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasLeft"><i class="fas fa-phone-square-alt"></i></a>
+                <div class="row d-flex align-content-around">
+                    
+                <div class="col col-sm-12 col-md-3 col-xl-6 text-center">
+                        <a  href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasLeft"><i class="fas fa-phone-square-alt"></i></a>
                     </div>
                 
-                    <div class="col col-sm-12 col-md-3 col-xl-3">  
-                        <a class="text-center" href="#"><i class="fas fa-envelope" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-2" aria-controls="offcanvasRight"></i></a>
+                    <div class="col col-sm-12 col-md-3 col-xl-6 text-center">  
+                        <a  href="#"><i class="fas fa-envelope" data-bs-toggle="offcanvas
+                        " data-bs-target="#offcanvas-1" aria-controls="offcanvasRight"></i></a>
                     </div>
                 </div>
             </div>
