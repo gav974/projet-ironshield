@@ -43,21 +43,25 @@
             
 
         }
-    }
-    @media screen and (min-width: 480px) {
-        ul{
-        li{
-            width:2em;
-           margin: 0;
-            font-size: 8px;
-        }
-
-        span{
-            font-size: 8px;
-            
+        @media screen and (max-width: 531px) {
+            ul{
+                margin: 0;
+                
+            li{
+                width:auto+5px;
+                height: auto;
+                margin: 0;
+                font-size: 1rem;
+            }
     
+            span{
+                font-size: 2rem;
+                
+        
+            }
+          }
         }
-      }
     }
+   
 }
 

@@ -1,27 +1,25 @@
 <?php
 
-$nom = $_POST['form_name'];
-$prenom = $_POST['form_lastname'];
-$demande=$_POST['form-need'];
-$email = $_POST['form_email'];
-$message = $_POST['form_message'];
+    if(isset($_POST['message'])){
+        $entete  = 'MIME-Version: 1.0' . "\r\n";
+        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        $entete .= 'From: ' . $_POST['form_email'] . "\r\n";
 
+        $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+        <p><b>Nom : </b>' . $_POST['form_name'] .' <b>Prénom : </b>' . $_POST['form_lastname'] .'<br>
+        <b>Email : </b>' . $_POST['form_email'] . '<br>
+        <b>objet : </b>' . $_POST['form_need'] . '<br><br><br>
+        
+        <b>Message : </b>' . $_POST['form_message'] . '</p>';
 
-$msg = "Demande = $civilite
-Nom = $nom
-Prénom= $prenom
-Adresse email= $email
-Message= $message";
-$recipient = "fepil85127@rebation.com"; //On met l'adresse email ou on veut recevoire le mail
-$subject = "Formulaire de  contact"; //On met le sujet du mail
-$mailheaders = "From: Mon site Perso<> \n"; //depuis où il a été posté
-mail($recipient, $subject, $msg, $mailheaders); // message confirmation que le mail a bien été envoyé
-echo "<HTML><HEAD>";
-echo "<TITLE> CONTACT</TITLE></HEAD><BODY>";
-echo "<H3 align=center><br>Merci $nom,<br> Votre formulaire est envoyé.<br> Nous faisons le nécessaire pour vous répondre dans les meilleurs délai<br><br> Vous allez être redirigé sur l'accueil </H3>";
-echo "<P align=center>";
-echo "</P>";
-echo "</BODY></HTML>";
-header('Refresh: 7; index.html');
-
-?> 
+        $retour = mail('eclapierjtotograf@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+        
+        if($retour) {
+            echo '<p>Votre message a bien été envoyé.</p>';
+        }else {
+            echo '<p>une erreur est survenue veuillez réessayer plus tard</p>';
+        };
+        
+        header('refresh:3, index.php');
+    }
+    ?>
