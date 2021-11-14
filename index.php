@@ -1,3 +1,19 @@
+<?php
+
+$compteur =fopen('statistique/compteur.txt','r+');
+
+$pages_vue = fgets($compteur);
+$pages_vue += 1;
+define ("pagevues", $pages_vue);
+fseek($compteur,0);
+fputs($compteur, $pages_vue);
+
+fclose($compteur)
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
         <head>
@@ -24,34 +40,18 @@
     <body>
         <video class="min-vh-100 min-vw-100" preload autoplay loop muted>
             <source src="./medias/background.mp4" type="video/mp4">
-         </video>
-        
-       <section class="section-1">
+        </video>
+        <section class="section-1">
             <div id=part-1 class="container">
                 <div class="row ">
-                    <div class="col-12 col-sm-12 col-md-12 col-xl-4 d-sm-flex d-md-flex d-xl-block justify-content-center">
-                        <img class="img-fluid" src="./medias/logo-detouré.png" alt="logo entreprise">
+                    <div  class="col-12 col-sm-12 col-md-12 col-xl-4 d-sm-flex d-md-flex d-xl-block justify-content-center my-5">
+                        <img id="logo" class="img-fluid" src="./medias/logo-detouré.png" alt="logo entreprise">
                     </div>
-                        <div class="col-auto col-sm-12 col-md-12 col-xl-8 ">
+                        <div class="col-auto col-sm-12 col-md-12 col-xl-8 my-xl-5 mt-0 ">
                         <!-- <h1>GROUPE SINAPIN</h1> -->
-                            <h2 class=" font1 display-3 mt-0 mt-xl-4  text-center text-uppercase">Nous travaillons à la conception du site </h2>
-                             <p class=" font1 fs-3 text-center ">Rendez-vous à l'ouverture </p>
-                             <p class=" font1 fs-3 text-center">le 08 octobre </p>  
-                             <div id=part-timer class="container-fluid">
-                                <div class="row">
-                                    <div class="col-11 col-sm-12 col-md-12 col-xl-12" >
-                                        <h1 id="headline"></h1>
-                                        <div class="text-center" id="countdown">
-                                            <ul >
-                                                <li><span id="days"></span>Jours</li>
-                                                <li><span id="hours"></span>Heures</li>
-                                                <li><span id="minutes"></span>Minutes</li>
-                                                <li><span id="seconds"></span>Secondes</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h5 class=" font1 display-6 mt-0 mt-xl-4  text-center text-uppercase"> Le site est en cours de construction </h5>
+                             <p class=" font1 fs-3 text-center ">Patientez nous serons bientot en ligne  </p>  
+                             <div>
                         </div>
                            
                 </div>
@@ -62,19 +62,22 @@
 <!--section two-->
         <section class="section-2">
             <div class="container font1 ">
-                <div class="row d-flex align-content-around">
+                <div class="row ">
                     
-                <div class="col col-sm-12 col-md-3 col-xl-6 text-center">
+                    <div class="col col-sm-12 col-md-12 col-xl-4 text-center">
                         <a  href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasLeft"><i class="fas fa-phone-square-alt"></i></a>
                     </div>
                 
-                    <div class="col col-sm-12 col-md-3 col-xl-6 text-center">  
-                        <a  href="#"><i class="fas fa-envelope" data-bs-toggle="offcanvas
-                        " data-bs-target="#offcanvas-1" aria-controls="offcanvasRight"></i></a>
+                   <div class="col col-sm-12 col-md-12 col-xl-4 text-center ">  
+                        <a  href="#"><i class="fas fa-envelope" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-2" aria-controls="offcanvasRight"  ></i></a>
                     </div>
+               
+             
+                        <div class="col col-sm-12 col-md-12 col-xl-4 text-center ">
+                        <a  href="https://www.linkedin.com/in/christophe-sinapin-%F0%9F%8C%8D-57bb42182/"><i class="fab fa-linkedin text-primary"></i></a>
+                        </div>
                 </div>
             </div>
-            
 
         </section>
 
@@ -123,7 +126,7 @@
                      
                                 <div>
                      
-                                    <form id="contact-form" method="post" action="/php/contact.php" role="form">
+                                    <form id="contact-form" method="post" action="php/contact.php" role="form">
                      
                                         <div class="messages"></div>
                      
@@ -133,14 +136,14 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="form_name">Nom *</label>
-                                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Votre nom *" required="required" data-error="Nom est obligatoire.">
+                                                        <input name="form_name" type="text" name="name" class="form-control" placeholder="Votre nom *" required="required" data-error="Nom est obligatoire.">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="form_lastname">Prénom *</label>
-                                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Votre prénom *" required="required" data-error="Prénom est obligatoire.">
+                                                        <input name="form_lastname" type="text" name="surname" class="form-control" placeholder="Votre prénom *" required="required" data-error="Prénom est obligatoire.">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -149,18 +152,16 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_email">Email *</label>
-                                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Votre email *" required="required" data-error="Un email valide est obligatoire.">
+                                                        <input name="form_email" type="email" name="email" class="form-control" placeholder="Votre email *" required="required" data-error="Un email valide est obligatoire.">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_need">Comment pouvons nous vous aidez ?</label>
-                                                        <select id="form_need" name="need" class="form-control" required="required" data-error=" ?">
-                                                            <option value="qfdqsqsd" disabled></option>
-                                                            <option value="Demande générale">Demande générale</option>
+                                                        <select name="form_need" name="need" class="form-control" required="required" data-error=" ?">
                                                             <option value="Demande de devis">Demande de devis</option>
-                                                            <option value="Demander une facture">Demander une facture</option>
+                                                            <option value="Demander une facture">Demande dd'intervention</option>
                                                             <option value="Autre">Autre</option>
                                                         </select>
                                                         <div class="help-block with-errors"></div>
@@ -171,12 +172,12 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_message">Message *</label>
-                                                        <textarea id="form_message" name="message" class="form-control" placeholder="Votre Message *" rows="4" required="required" data-error="Veuillez remplir le champ Message." maxlength=""></textarea>
+                                                        <textarea name="form_message" name="message" class="form-control" placeholder="Votre Message *" rows="4" required="required" data-error="Veuillez remplir le champ Message." maxlength=""></textarea>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 mt-2">
-                                                    <input type="submit" class="btn  btn-send" value="Envoyer">
+                                                    <input type="submit" class="btn btn-success  btn-send" value="Envoyer" onclick="this.form.submit()">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -198,14 +199,25 @@
                         </div>
                         
                     </div>
+                 
         <!--end of scrollspy-->
         </div>
+<footer>
+    <p class="text-end"><?php echo pagevues ?></p>
+</footer>
+
 
 <!--script part-->
-    <script src="js/contact.js"></script>
-    <script src="js/timer.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+    <script src="js/animation.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/timer.js"></script>
+
+
+
+</body>     
 </html>
