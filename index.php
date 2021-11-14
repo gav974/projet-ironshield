@@ -26,8 +26,8 @@ fclose($compteur)
     <link rel="shortcut icon" href="médias/favicon-ironshield-image.png" type="image/x-icon">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
-   
+    <!--css animation -->
+    <link rel="stylesheet" href="css/wickedcss.min.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--setting css-->
@@ -45,6 +45,7 @@ fclose($compteur)
             <div id=part-1 class="container">
                 <div class="row ">
                     <div  class="col-12 col-sm-12 col-md-12 col-xl-4 d-sm-flex d-md-flex d-xl-block justify-content-center my-5">
+<<<<<<< HEAD
                         <img id="logo" class="img-fluid" src="./medias/logo-detouré.png" alt="logo entreprise">
                     </div>
                         <div class="col-auto col-sm-12 col-md-12 col-xl-8 my-xl-5 mt-0 ">
@@ -52,6 +53,29 @@ fclose($compteur)
                             <h5 class=" font1 display-6 mt-0 mt-xl-4  text-center text-uppercase"> Le site est en cours de construction </h5>
                              <p class=" font1 fs-3 text-center ">Patientez nous serons bientot en ligne  </p>  
                              <div>
+=======
+                        <img id="logo" class="pulse img-fluid " src="./medias/logo-detouré.png" alt="logo entreprise">
+                    </div>
+                        <div class="col-auto col-sm-12 col-md-12 col-xl-8 my-xl-5 mt-0 ">
+                        <!-- <h1>GROUPE SINAPIN</h1> -->
+                            <h5 class=" font1 display-6 mt-0 mt-xl-4  text-center text-uppercase"> Nous travaillons sur la conception du <span >site internet </span> </h5>
+                             <p class=" font1 fs-3 text-center ">Rendez-vous à l'ouverture: prochaine ... </p>  
+                             <div id=part-timer class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-12" >
+                                        <!--<h1 id="headline"></h1>-->
+                                        <div class="text-center" id="countdown">
+                                            <ul >
+                                                <li><span id="days"></span>Jours</li>
+                                                <li><span id="hours"></span>Heures</li>
+                                                <li><span id="minutes"></span>Minutes</li>
+                                                <li><span id="seconds"></span>Secondes</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                         </div>
                            
                 </div>
@@ -64,24 +88,37 @@ fclose($compteur)
             <div class="container font1 ">
                 <div class="row ">
                     
+<<<<<<< HEAD
                     <div class="col col-sm-12 col-md-12 col-xl-4 text-center">
                         <a  href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasLeft"><i class="fas fa-phone-square-alt"></i></a>
                     </div>
                 
                    <div class="col col-sm-12 col-md-12 col-xl-4 text-center ">  
                         <a  href="#"><i class="fas fa-envelope" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-2" aria-controls="offcanvasRight"  ></i></a>
+=======
+                    <div class="col col-sm-12 col-md-12 col-xl-4 text-center ">
+                        <a  href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1" aria-controls="offcanvasLeft"><i class="fas fa-info"></i></a>
+                    </div>
+                
+                   <div class="col col-sm-12 col-md-12 col-xl-4 text-center ">  
+                        <a  href="mailto:groupesinapin@gmail.com?subject=prise de contact"><i class="fas fa-envelope"></i></a>
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                     </div>
                
              
                         <div class="col col-sm-12 col-md-12 col-xl-4 text-center ">
+<<<<<<< HEAD
                         <a  href="https://www.linkedin.com/in/christophe-sinapin-%F0%9F%8C%8D-57bb42182/"><i class="fab fa-linkedin text-primary"></i></a>
+=======
+                        <a  href="https://www.linkedin.com/company/groupesinapin/?viewAsMember=true"><i class="fab fa-linkedin text-primary"></i></a>
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                         </div>
                 </div>
             </div>
 
         </section>
 
-         <!--Scrollspy-->
+         <!--Scrollspy part info-->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-1" aria-labelledby="offcanvasLeftLabel">
             <div class="offcanvas-header font1">
                     <h5 id="offcanvasLeftLabel">Nos coordonnées</h5>
@@ -112,7 +149,7 @@ fclose($compteur)
                     </div>
                     <!--end of scrollspy-->
         </div>
-         <!--Scrollspy 2-->
+         <!--Scrollspy 2 email form-->
          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-2" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                     <h5 id="offcanvasLeftLabel">Envoyez votre message</h5>
@@ -126,7 +163,11 @@ fclose($compteur)
                      
                                 <div>
                      
+<<<<<<< HEAD
                                     <form id="contact-form" method="post" action="php/contact.php" role="form">
+=======
+                                    <form id="contact-form" method="post" role="form">
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                      
                                         <div class="messages"></div>
                      
@@ -136,14 +177,22 @@ fclose($compteur)
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="form_name">Nom *</label>
+<<<<<<< HEAD
                                                         <input name="form_name" type="text" name="name" class="form-control" placeholder="Votre nom *" required="required" data-error="Nom est obligatoire.">
+=======
+                                                        <input name="form_name" type="text" class="form-control" placeholder="Votre nom *" required="required" data-error="Nom est obligatoire.">
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="form_lastname">Prénom *</label>
+<<<<<<< HEAD
                                                         <input name="form_lastname" type="text" name="surname" class="form-control" placeholder="Votre prénom *" required="required" data-error="Prénom est obligatoire.">
+=======
+                                                        <input name="form_lastname" type="text" class="form-control" placeholder="Votre prénom *" required="required" data-error="Prénom est obligatoire.">
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -152,14 +201,22 @@ fclose($compteur)
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_email">Email *</label>
+<<<<<<< HEAD
                                                         <input name="form_email" type="email" name="email" class="form-control" placeholder="Votre email *" required="required" data-error="Un email valide est obligatoire.">
+=======
+                                                        <input name="form_email" type="email"  class="form-control" placeholder="Votre email *" required="required" data-error="Un email valide est obligatoire.">
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_need">Comment pouvons nous vous aidez ?</label>
+<<<<<<< HEAD
                                                         <select name="form_need" name="need" class="form-control" required="required" data-error=" ?">
+=======
+                                                        <select name="form_need" class="form-control" required="required" data-error=" ?">
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                                                             <option value="Demande de devis">Demande de devis</option>
                                                             <option value="Demander une facture">Demande dd'intervention</option>
                                                             <option value="Autre">Autre</option>
@@ -172,12 +229,20 @@ fclose($compteur)
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="form_message">Message *</label>
+<<<<<<< HEAD
                                                         <textarea name="form_message" name="message" class="form-control" placeholder="Votre Message *" rows="4" required="required" data-error="Veuillez remplir le champ Message." maxlength=""></textarea>
+=======
+                                                        <textarea name="form_message" class="form-control" placeholder="Votre Message *" rows="4" required data-error="Veuillez remplir le champ Message." maxlength="255"></textarea>
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 mt-2">
+<<<<<<< HEAD
                                                     <input type="submit" class="btn btn-success  btn-send" value="Envoyer" onclick="this.form.submit()">
+=======
+                                                    <input type="submit" class="btn btn-success  btn-send" value="Envoyer" ">
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -199,8 +264,12 @@ fclose($compteur)
                         </div>
                         
                     </div>
+<<<<<<< HEAD
                  
         <!--end of scrollspy-->
+=======
+       <!--end of scrollspy-->
+>>>>>>> a46b6ca769982152be453ac1f9ae6b26927f266d
         </div>
 <footer>
     <p class="text-end"><?php echo pagevues ?></p>
